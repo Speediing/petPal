@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         playedImage.image = UIImage(named:"check")!
     }
     @IBOutlet weak var healthBar: UIImageView!
+    @IBOutlet weak var dogHead: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,14 +45,27 @@ class ViewController: UIViewController {
             timeInterval: 1.0, target: self, selector: #selector(setHealth),
             userInfo: nil, repeats: true)
         setHealth()
+        let timer2 = Timer.scheduledTimer(
+            timeInterval: 2.0, target: self, selector: #selector(animatePlease),
+            userInfo: nil, repeats: true)
+       
         //let defaults = UserDefaults.standard
         //if let stringOne = defaults.string(forKey: defaultsKeys.keyOne) {
           //  dog.dogLevel = Int(stringOne)!
         //}
     }
-    
+    func animatePlease(){
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseInOut, animations: {
+            self.dogHead.frame.origin.y -= 10
+        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
+            self.dogHead.frame.origin.y += 10
+        }, completion: nil)
+        
+    }
     var didGetDelta = false
     func setHealth(){
+        
         print("set health")
         if !didGetDelta{
             dog.health = dog.getTimeDelta(frequency: Double(dog.frequency)) * 256

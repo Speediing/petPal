@@ -27,16 +27,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetPal_BG1" translatesAutoresizingMaskIntoConstraints="NO" id="qqd-Uc-TRT">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-1o-q4m">
-                                <rect key="frame" x="11" y="161" width="115" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-1o-q4m">
+                                <rect key="frame" x="-28" y="106" width="194" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-wn-kku">
-                                <rect key="frame" x="122" y="123" width="146" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-wn-kku">
+                                <rect key="frame" x="122" y="106" width="162" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_body" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-D5-pri">
-                                <rect key="frame" x="30" y="311" width="330" height="174"/>
+                                <rect key="frame" x="38" y="265" width="273" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-UN-AGZ">
@@ -47,12 +47,8 @@
                                 <rect key="frame" x="348" y="106" width="46" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-m3-W1X">
-                                <rect key="frame" x="184" y="224" width="146" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-nE-c4u">
-                                <rect key="frame" x="38" y="169" width="61" height="64"/>
+                                <rect key="frame" x="27" y="145" width="61" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Feed">
@@ -63,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gx-10b">
-                                <rect key="frame" x="232" y="226" width="51.000000000000057" height="77"/>
+                                <rect key="frame" x="242" y="207" width="51.000000000000057" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Play">
@@ -74,7 +70,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-fe-XHS">
-                                <rect key="frame" x="166" y="130" width="59" height="67"/>
+                                <rect key="frame" x="174" y="121" width="59" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Walk">
@@ -101,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_head" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zW-8dP">
-                                <rect key="frame" x="38" y="283" width="122" height="76"/>
+                                <rect key="frame" x="38" y="265" width="122" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eay-kk-bTZ">
@@ -142,6 +138,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Pxz-kx-1cp"/>
                                 </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud-1" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-m3-W1X">
+                                <rect key="frame" x="169" y="192" width="209" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -190,6 +190,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dogHead" destination="mVm-zW-8dP" id="Vfj-AR-B1X"/>
                         <outlet property="fedImage" destination="4sc-TE-XvX" id="cn5-yc-cTe"/>
                         <outlet property="healthBar" destination="Ipm-jh-7gT" id="hbU-2j-4G0"/>
                         <outlet property="playedImage" destination="Vkq-DR-M7D" id="qnX-XQ-GbB"/>
@@ -199,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="53"/>
+            <point key="canvasLocation" x="1144.9275362318842" y="52.989130434782609"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="GrO-Ne-g3B">
@@ -376,7 +377,7 @@
         <image name="HP_Main" width="115" height="690"/>
         <image name="HP_Secondary" width="115" height="690"/>
         <image name="PetPal_BG1" width="1080" height="1920"/>
-        <image name="cloud" width="296" height="174"/>
+        <image name="cloud-1" width="512" height="512"/>
         <image name="cog" width="2000" height="2000"/>
         <image name="dog_body" width="678" height="646"/>
         <image name="dog_head" width="265" height="155"/>
