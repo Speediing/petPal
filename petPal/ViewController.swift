@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     let dog = Dog()
     
+    @IBOutlet weak var secondaryBar: UIImageView!
     @IBAction func Feed(_ sender: UIButton) {
         dog.fed = 1
     }
@@ -35,9 +36,9 @@ class ViewController: UIViewController {
     func setHealth(){
     dog.health = dog.getTimeDelta()
     dog.checkStates()
+        let x = secondaryBar.frame.origin
         
-        let bar = healthBar.image
-        let oldFrame = healthBar.frame
+        self.healthBar.frame = CGRect(x: x., y: 50, width: 50,height: 50 )
         
     }
     

@@ -80,7 +80,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <connections>
-                                <segue destination="LnW-4d-pbO" kind="show" id="EeV-Cq-Civ"/>
+                                <segue destination="5AM-dJ-neR" kind="show" id="EeV-Cq-Civ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -92,6 +92,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="215.19999999999999" y="3.1484257871064472"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ja-5Y-guc">
+            <objects>
+                <viewController id="5AM-dJ-neR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1kT-qz-nZO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ozc-Rg-pl4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C5x-0m-AVU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nM-en-tcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8G4-Oz-9IG">
@@ -111,14 +129,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSd-1b-p7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-724" y="3.1484257871064472"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="HG5-SY-rB2">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="LnW-4d-pbO" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kD8-Si-dRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1281" y="28"/>
         </scene>
     </scenes>
     <resources>

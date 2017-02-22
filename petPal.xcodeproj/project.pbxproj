@@ -13,6 +13,7 @@
 		9619C4211E5D017100DD628F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9619C41F1E5D017100DD628F /* LaunchScreen.storyboard */; };
 		9619C42B1E5D15A600DD628F /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9619C42A1E5D15A600DD628F /* Dog.swift */; };
 		9619C42D1E5D361D00DD628F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9619C42C1E5D361D00DD628F /* Main.storyboard */; };
+		9619C42F1E5D4D3400DD628F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9619C42E1E5D4D3400DD628F /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9619C4221E5D017100DD628F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9619C42A1E5D15A600DD628F /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		9619C42C1E5D361D00DD628F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9619C42E1E5D4D3400DD628F /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				9619C41D1E5D017100DD628F /* Assets.xcassets */,
 				9619C41F1E5D017100DD628F /* LaunchScreen.storyboard */,
 				9619C42C1E5D361D00DD628F /* Main.storyboard */,
+				9619C42E1E5D4D3400DD628F /* Settings.storyboard */,
 				9619C4221E5D017100DD628F /* Info.plist */,
 			);
 			path = petPal;
@@ -130,6 +133,7 @@
 				9619C4211E5D017100DD628F /* LaunchScreen.storyboard in Resources */,
 				9619C41E1E5D017100DD628F /* Assets.xcassets in Resources */,
 				9619C42D1E5D361D00DD628F /* Main.storyboard in Resources */,
+				9619C42F1E5D4D3400DD628F /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +304,7 @@
 				9619C4271E5D017100DD628F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
