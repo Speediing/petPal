@@ -51,31 +51,39 @@ class ViewController: UIViewController {
     }
     
     var didGetDelta = false
+    var count = 0
     func setHealth(){
+        count += 1
+        if count == Int(dog.frequency * 84600) ,  dog.didLevel == false{
+        dog.dogLevel = 1
+        self.count = 0
+        }
+        if count == Int(dog.frequency * 84600){
+        count = 0
+        dog.didLevel = false
+        }
+        print("count", count)
         print("set health")
-        if !didGetDelta{
-            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency)) * 256
+        print(dog.frequency * 86400)
+        if !didGetDelta, dog.didLevel == false{
+            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency), currentTime: count) * 256
             print(dog.health)
             //didGetDelta = true
         }
         dog.checkStates()
+        
         let title = (Dog.name + " || Level:" + String(dog.dogLevel))
         self.title = title
         let d = CGFloat(round(dog.health))
-        let x = secondaryBar.frame.origin
+        print("d",d)
+        let x = healthBar.frame.origin
         self.healthBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
         let defaults = UserDefaults.standard
+        
         defaults.setValue((String(dog.dogLevel)), forKey: defaultsKeys.keyOne)
         defaults.synchronize()
     }
     
-    override func encodeRestorableState(with coder: NSCoder) {
-        coder.encode(dog.dogLevel, forKey: "doglevel")
-        super.encodeRestorableState(with: coder)
-    }
-    override func decodeRestorableState(with coder: NSCoder) {
-        dog.dogLevel = coder.decodeInteger(forKey: "doglevel")
-        super.decodeRestorableState(with: coder)
-    }
+    
     }
 

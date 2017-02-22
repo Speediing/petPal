@@ -20,29 +20,21 @@ var oftenToFeed = 1
     var didLevel = false
     static var name = ""
     
-    func getTimeDelta(frequency: Double) -> Double{
-        print("freq", frequency)
-        let chunkNum = Int(1 / frequency) + 1
+    func getTimeDelta(frequency: Double, currentTime: Int) -> Double{
+        let timeAllowed = frequency * 84600
+        print("time allowed", timeAllowed)
+        let delta = Double(currentTime)/timeAllowed
         
-        let secondsNum = frequency * 86400
-        let hours = Int(secondsNum / 3600)
-        print("hours", hours)
-        let minute = Int(((secondsNum / 3600) - Double(hours)) * 60)
-        print("minute", minute)
-        let currentDate = Date()
-        let calendar = Calendar.current
-        let midnightTime = DateComponents(year: (calendar.component(.year, from: currentDate) ), month: (calendar.component(.month, from: currentDate)), day: (calendar.component(.day, from: currentDate)) , hour: 0, minute: 0)
-        let midnightDate = calendar.date(from: midnightTime)!
-        let date = currentDate.timeIntervalSince(midnightDate)
-        print("date", date)
-        let delta = (1 - (date / 86400))
+       
+        
+        
         print("delta", delta)
         return delta
     }
     
     
     
-    func checkStates(){
+    func checkStates() {
        let statesList = [fed, walked, played]
         var c = -1
         for i in statesList{
@@ -62,7 +54,6 @@ var oftenToFeed = 1
         self.health = 256
         }
         
-
         
         
     }
