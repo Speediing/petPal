@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2px-XW-T2W">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,11 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_body" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-D5-pri">
-                                <rect key="frame" x="16" y="294" width="299" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_head" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zW-8dP">
-                                <rect key="frame" x="16" y="261" width="122" height="76"/>
+                                <rect key="frame" x="16" y="240" width="299" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-UN-AGZ">
@@ -45,11 +41,14 @@
                                 <rect key="frame" x="47" y="132" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Feed"/>
+                                <connections>
+                                    <action selector="Feed:" destination="2px-XW-T2W" eventType="touchUpInside" id="c0b-IC-DaS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gx-10b">
-                                <rect key="frame" x="209" y="202" width="34" height="30"/>
+                                <rect key="frame" x="211" y="202" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PLay"/>
+                                <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="Play:" destination="2px-XW-T2W" eventType="touchUpInside" id="bDv-aH-90t"/>
                                 </connections>
@@ -59,9 +58,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Walk"/>
                                 <connections>
-                                    <action selector="Walk:" destination="2px-XW-T2W" eventType="touchUpInside" id="EZs-JM-JUI"/>
+                                    <action selector="Walk:" destination="2px-XW-T2W" eventType="touchUpInside" id="BB9-AE-ax0"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BottomStatus" translatesAutoresizingMaskIntoConstraints="NO" id="YvQ-xO-vrZ">
+                                <rect key="frame" x="0.0" y="438" width="375" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_head" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zW-8dP">
+                                <rect key="frame" x="16" y="214" width="122" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -72,15 +79,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <connections>
+                                <segue destination="5AM-dJ-neR" kind="show" id="EeV-Cq-Civ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="Walk" destination="6Vj-fe-XHS" id="zBJ-dZ-9dK"/>
+                        <outlet property="healthBar" destination="Ipm-jh-7gT" id="hbU-2j-4G0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="215.19999999999999" y="3.1484257871064472"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4ja-5Y-guc">
+            <objects>
+                <viewController id="5AM-dJ-neR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1kT-qz-nZO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ozc-Rg-pl4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C5x-0m-AVU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nM-en-tcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8G4-Oz-9IG">
@@ -103,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BottomStatus" width="1080" height="611"/>
         <image name="HP_Main" width="115" height="690"/>
         <image name="HP_Secondary" width="115" height="690"/>
         <image name="PetPal_BG1" width="1080" height="1920"/>

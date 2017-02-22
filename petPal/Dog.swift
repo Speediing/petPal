@@ -29,10 +29,17 @@ var oftenToFeed = 1
     
     
     func checkStates(){
-       let statesList = [fed, walked, played]
+       var statesList = [fed, walked, played]
         for i in statesList{
             if i == 1{
              health += 33.3
+                if i == fed{
+                self.fed = 0
+                }else if i == walked{
+                self.walked = 0
+                }else{
+                self.played = 0
+                }
             }
         }
         if health > 100 {
