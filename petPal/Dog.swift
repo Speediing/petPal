@@ -15,47 +15,46 @@ var oftenToFeed = 1
     var walked = 0
     var played = 0
     var health = 0.0
+    var dogLevel = 1
     
     func getTimeDelta() -> Double{
         let currentDate = Date()
         let calendar = Calendar.current
         let midnightTime = DateComponents(year: (calendar.component(.year, from: currentDate) ), month: (calendar.component(.month, from: currentDate)), day: (calendar.component(.day, from: currentDate)) , hour: 0, second: 0)
         let midnightDate = calendar.date(from: midnightTime)!
-        var date = currentDate.timeIntervalSince(midnightDate)
-        let delta = 1 - (date / 86400)
+        let date = currentDate.timeIntervalSince(midnightDate)
+        let delta = (1 - (date / 86400))
         return delta
     }
     
     
     
     func checkStates(){
-       var statesList = [fed, walked, played]
+       let statesList = [fed, walked, played]
+        var c = -1
         for i in statesList{
+            c+=1
+            print("i",i)
             if i == 1{
-             health += 33.3
-                if i == fed{
-                self.fed = 0
-                }else if i == walked{
-                self.walked = 0
-                }else{
-                self.played = 0
-                }
+             print("stepped in")
+             self.health += 85.34
             }
         }
-        if health > 100 {
-        health = 100
+        if self.fed == 1, self.walked == 1, self.played == 1{
+        self.dogLevel += 1
+        self.fed = 0
+        self.played = 0
+        self.walked = 0
+        }
+        if self.health > 256 {
+        self.health = 256
         }
         
 
         
         
     }
-    func getExcersise(){
-        
-    }
-    func getHappiness(){
-        
-    }
+   
     
     
 }
