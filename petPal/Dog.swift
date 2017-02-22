@@ -36,9 +36,7 @@ var oftenToFeed = 1
         var c = -1
         for i in statesList{
             c+=1
-            print("i",i)
             if i == 1{
-             print("stepped in")
              self.health += 85.34
             }
         }

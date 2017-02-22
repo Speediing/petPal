@@ -57,7 +57,6 @@ class ViewController: UIViewController {
         let title = (Dog.name + " || Level:" + String(dog.dogLevel))
         self.title = title
         let d = CGFloat(round(dog.health))
-        print(d)
         let x = secondaryBar.frame.origin
         self.healthBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
         
