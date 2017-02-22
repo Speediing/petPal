@@ -8,13 +8,22 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var care: UISlider!
+    @IBAction func careFrequency(_ sender: UISlider) {
+        dog.frequency = care.value
+        print(dog.frequency)
+    }
+    
+    @IBOutlet weak var dogField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
+        care.isContinuous = false
         
-        // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

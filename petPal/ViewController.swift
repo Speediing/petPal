@@ -7,9 +7,8 @@
 //
 
 import UIKit
-
+let dog = Dog()
 class ViewController: UIViewController {
-    let dog = Dog()
     
     @IBOutlet weak var secondaryBar: UIImageView!
     @IBOutlet weak var fedImage: UIImageView!
@@ -45,7 +44,7 @@ class ViewController: UIViewController {
             timeInterval: 1.0, target: self, selector: #selector(setHealth),
             userInfo: nil, repeats: true)
         setHealth()
-        let defaults = UserDefaults.standard
+        //let defaults = UserDefaults.standard
         //if let stringOne = defaults.string(forKey: defaultsKeys.keyOne) {
           //  dog.dogLevel = Int(stringOne)!
         //}
@@ -53,11 +52,11 @@ class ViewController: UIViewController {
     
     var didGetDelta = false
     func setHealth(){
-        
+        print("set health")
         if !didGetDelta{
-            dog.health = dog.getTimeDelta() * 256
+            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency)) * 256
             print(dog.health)
-            didGetDelta = true
+            //didGetDelta = true
         }
         dog.checkStates()
         let title = (Dog.name + " || Level:" + String(dog.dogLevel))

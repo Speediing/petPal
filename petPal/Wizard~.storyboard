@@ -184,7 +184,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Jed-tA-x5w" kind="show" id="Rk2-d2-ILr"/>
+                                    <segue destination="8Ki-Mo-VWA" kind="show" id="Rk2-d2-ILr"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -200,24 +200,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1146" y="53"/>
-        </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="x9u-1c-xxI">
-            <objects>
-                <viewController storyboardIdentifier="settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jed-tA-x5w" customClass="SettingsViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1TW-tk-PiN"/>
-                        <viewControllerLayoutGuide type="bottom" id="hw9-Al-6Ge"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QpP-cf-Ntf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WU3-pa-r3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2399" y="3"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="GrO-Ne-g3B">
@@ -328,6 +310,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-Li-gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="215.19999999999999" y="3.1484257871064472"/>
+        </scene>
+        <!--settings-->
+        <scene sceneID="oHg-mV-XUf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="settings" storyboardName="Settings" referencedIdentifier="settings" id="8Ki-Mo-VWA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yS-Qx-7Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2399" y="3"/>
         </scene>
     </scenes>
     <resources>
