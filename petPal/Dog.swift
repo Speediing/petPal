@@ -21,7 +21,7 @@ var oftenToFeed = 1
     static var name = ""
     
     func getTimeDelta(frequency: Double, currentTime: Int) -> Double{
-        let timeAllowed = frequency * 84600
+        let timeAllowed = frequency * 60
         print("time allowed", timeAllowed)
         let delta = Double(currentTime)/timeAllowed
         
@@ -40,7 +40,7 @@ var oftenToFeed = 1
         for i in statesList{
             c+=1
             if i == 1{
-             self.health += 85.34
+             self.health -= 85.34
             }
         }
         if self.fed == 1, self.walked == 1, self.played == 1, self.didLevel == false{
@@ -52,6 +52,9 @@ var oftenToFeed = 1
         }
         if self.health > 256 {
         self.health = 256
+        }
+        if self.health < 0{
+        self.health = 0
         }
         
         

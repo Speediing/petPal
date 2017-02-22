@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITextViewDelegate {
+class SettingsViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var care: UISlider!
     @IBAction func careFrequency(_ sender: UISlider) {
@@ -17,10 +17,12 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
     }
     
     @IBOutlet weak var dogField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
         care.isContinuous = false
+        dogField.delegate = self
         
         
         
@@ -31,7 +33,11 @@ class SettingsViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        Dog.name = dogField.text!
+        dogField.resignFirstResponder()
+        return true
+    }
 
 }

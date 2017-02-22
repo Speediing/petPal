@@ -27,58 +27,48 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetPal_BG1" translatesAutoresizingMaskIntoConstraints="NO" id="qqd-Uc-TRT">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-1o-q4m">
-                                <rect key="frame" x="11" y="161" width="115" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud_new" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-1o-q4m">
+                                <rect key="frame" x="-15" y="40" width="169" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-wn-kku">
-                                <rect key="frame" x="122" y="123" width="146" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud_new" translatesAutoresizingMaskIntoConstraints="NO" id="YCe-wn-kku">
+                                <rect key="frame" x="143" y="40" width="182" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_body" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-D5-pri">
-                                <rect key="frame" x="30" y="311" width="330" height="174"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-UN-AGZ">
-                                <rect key="frame" x="348" y="106" width="46" height="256"/>
+                                <rect key="frame" x="30" y="247" width="285" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Main" translatesAutoresizingMaskIntoConstraints="NO" id="Ipm-jh-7gT">
                                 <rect key="frame" x="348" y="106" width="46" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-m3-W1X">
-                                <rect key="frame" x="184" y="224" width="146" height="81"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-UN-AGZ">
+                                <rect key="frame" x="348" y="106" width="46" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud_new" translatesAutoresizingMaskIntoConstraints="NO" id="n8G-m3-W1X">
+                                <rect key="frame" x="207" y="131" width="146" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-nE-c4u">
-                                <rect key="frame" x="38" y="169" width="61" height="64"/>
+                                <rect key="frame" x="39" y="105" width="61" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
                                 <state key="normal" title="Feed">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.1845409036" blue="0.14698500219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="Feed:" destination="2px-XW-T2W" eventType="touchUpInside" id="c0b-IC-DaS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gx-10b">
-                                <rect key="frame" x="232" y="226" width="51.000000000000057" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="Play:" destination="2px-XW-T2W" eventType="touchUpInside" id="bDv-aH-90t"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-fe-XHS">
-                                <rect key="frame" x="166" y="130" width="59" height="67"/>
+                                <rect key="frame" x="207" y="78" width="70" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="Walk">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Walks">
+                                    <color key="titleColor" red="1" green="0.1845409036" blue="0.14698500219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.14628145098686218" green="0.094640322029590607" blue="0.034534920006990433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="Walk:" destination="2px-XW-T2W" eventType="touchUpInside" id="BB9-AE-ax0"/>
@@ -89,24 +79,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walked:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3z-zS-q1W">
-                                <rect key="frame" x="84" y="695" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="84" y="696" width="56" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Played With:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-Ib-KhE">
-                                <rect key="frame" x="84" y="640" width="96" height="20.333333333333371"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="84" y="640" width="85" height="19.666666666666629"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_head" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zW-8dP">
-                                <rect key="frame" x="38" y="283" width="122" height="76"/>
+                                <rect key="frame" x="30" y="247" width="122" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eay-kk-bTZ">
-                                <rect key="frame" x="84" y="584" width="276" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="84" y="585" width="276" height="20"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -129,20 +119,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="4sc-TE-XvX">
-                                <rect key="frame" x="318" y="579.33333333333337" width="35" height="31"/>
+                                <rect key="frame" x="318" y="580" width="35" height="29.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="y7S-eY-1GE"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="xHe-N5-PBb">
-                                <rect key="frame" x="318" y="680.33333333333348" width="35" height="34.666666666666629"/>
+                                <rect key="frame" x="318" y="679.66666666666652" width="35" height="35.333333333333371"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="Vkq-DR-M7D">
-                                <rect key="frame" x="318" y="626.33333333333337" width="35" height="34"/>
+                                <rect key="frame" x="318" y="625.66666666666663" width="35" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Pxz-kx-1cp"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gx-10b">
+                                <rect key="frame" x="255" y="165" width="51.000000000000057" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="0.1845409036" blue="0.14698500219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Play:" destination="2px-XW-T2W" eventType="touchUpInside" id="bDv-aH-90t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -190,21 +191,24 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="cloud1" destination="rSe-1o-q4m" id="oRg-g6-xkZ"/>
+                        <outlet property="cloud2" destination="YCe-wn-kku" id="Ifx-WI-nK5"/>
+                        <outlet property="cloud3" destination="n8G-m3-W1X" id="d7I-uu-gir"/>
+                        <outlet property="dogHead" destination="mVm-zW-8dP" id="j4L-dU-h6L"/>
                         <outlet property="fedImage" destination="4sc-TE-XvX" id="cn5-yc-cTe"/>
                         <outlet property="healthBar" destination="Ipm-jh-7gT" id="hbU-2j-4G0"/>
                         <outlet property="playedImage" destination="Vkq-DR-M7D" id="qnX-XQ-GbB"/>
-                        <outlet property="secondaryBar" destination="Ipm-jh-7gT" id="KWd-Zw-Xoq"/>
+                        <outlet property="secondaryBar" destination="ZBi-UN-AGZ" id="Oko-Ab-KeK"/>
                         <outlet property="walkedImage" destination="xHe-N5-PBb" id="Mrg-hg-cZ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="53"/>
+            <point key="canvasLocation" x="1144.9275362318842" y="52.989130434782609"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="GrO-Ne-g3B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zj-AF-AfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="NameDog" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WoM-hr-jfZ" customClass="introViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XJE-C9-q7E"/>
@@ -214,37 +218,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the name of your doggo?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qk-Px-xrk">
-                                <rect key="frame" x="16" y="20" width="343" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="petPalFrontPage2" translatesAutoresizingMaskIntoConstraints="NO" id="2qH-MN-K5v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Csm-FB-BtE">
+                                <rect key="frame" x="29" y="504" width="316" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3oJ-hu-E1M"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Csm-FB-BtE">
-                                <rect key="frame" x="74" y="318" width="227" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <segue destination="KHp-hJ-bk7" kind="presentation" identifier="doggoName" id="qXD-Kz-l09"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the name of your dog?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qk-Px-xrk">
+                                <rect key="frame" x="16" y="432" width="343" height="64"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Csm-FB-BtE" firstAttribute="leading" secondItem="eyf-ST-neb" secondAttribute="leadingMargin" constant="13" id="3oG-Nu-3xk"/>
+                            <constraint firstItem="2qH-MN-K5v" firstAttribute="leading" secondItem="eyf-ST-neb" secondAttribute="leading" id="57P-8T-0Tu"/>
+                            <constraint firstItem="2qH-MN-K5v" firstAttribute="bottom" secondItem="2sU-IW-rta" secondAttribute="top" id="7re-3a-bis"/>
+                            <constraint firstAttribute="trailing" secondItem="2qH-MN-K5v" secondAttribute="trailing" id="CGg-T6-7KA"/>
+                            <constraint firstItem="2sU-IW-rta" firstAttribute="top" secondItem="Csm-FB-BtE" secondAttribute="bottom" constant="133" id="COh-of-Rlz"/>
+                            <constraint firstItem="2qH-MN-K5v" firstAttribute="centerX" secondItem="Csm-FB-BtE" secondAttribute="centerX" id="DBH-jP-LZB"/>
+                            <constraint firstItem="8qk-Px-xrk" firstAttribute="centerX" secondItem="Csm-FB-BtE" secondAttribute="centerX" id="KEg-ta-KJX"/>
+                            <constraint firstItem="Csm-FB-BtE" firstAttribute="top" secondItem="8qk-Px-xrk" secondAttribute="bottom" constant="8" symbolic="YES" id="LEw-ke-w5Z"/>
+                            <constraint firstItem="8qk-Px-xrk" firstAttribute="leading" secondItem="eyf-ST-neb" secondAttribute="leadingMargin" id="ewf-P3-4yW"/>
+                            <constraint firstItem="2qH-MN-K5v" firstAttribute="top" secondItem="eyf-ST-neb" secondAttribute="top" id="hij-T3-n9I"/>
+                            <constraint firstItem="8qk-Px-xrk" firstAttribute="top" secondItem="XJE-C9-q7E" secondAttribute="bottom" constant="412" id="ugQ-2y-HXp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="txtField" destination="Csm-FB-BtE" id="mvQ-yK-WSL"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zj-AF-AfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1207.2" y="0.44977511244377816"/>
+            <point key="canvasLocation" x="-1207.9710144927537" y="0.40760869565217395"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kUa-Eb-Ncf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ed0-cx-FE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="Intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kqx-YR-i3O" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pkl-h2-YyS"/>
@@ -254,43 +275,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Pet Pal!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNF-tf-8k0">
-                                <rect key="frame" x="16" y="28" width="315" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="petPalFrontPage2" translatesAutoresizingMaskIntoConstraints="NO" id="Ee1-3I-10E">
+                                <rect key="frame" x="0.0" y="-1" width="414" height="737"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8au-JK-pzu">
+                                <rect key="frame" x="51" y="443" width="343" height="175"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Your virtual pet helper.  Walk, play, and feed your pet every day to keep its health from going down. Level it up as you fulfil its needs!</string>
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="GillSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.69827797774869116" green="0.26937264030030367" blue="0.25502997418843354" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8au-JK-pzu">
-                                <rect key="frame" x="16" y="96" width="343" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Everyday remember to feed, walk and play with your virtual doggo when you do the same with your real life doggo. Remember to do it before the timer runs out so your doggo doesnt go back to level 1</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmV-Tx-VJC">
-                                <rect key="frame" x="16" y="443" width="184" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="Understood "/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmV-Tx-VJC">
+                                <rect key="frame" x="115" y="626" width="184" height="65"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.93725490196078431" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="gqU-5z-Ceo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                <state key="normal" title="Understood ">
+                                    <color key="titleColor" red="0.90588235294117647" green="0.2627450980392157" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="WoM-hr-jfZ" kind="popoverPresentation" popoverAnchorView="bmV-Tx-VJC" id="tfj-1t-Stz">
                                         <popoverArrowDirection key="popoverArrowDirection" right="YES"/>
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Pet Pal!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNF-tf-8k0">
+                                <rect key="frame" x="107" y="411" width="201" height="60"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.86049983638743455" green="0.3117731818196523" blue="0.27640682981716302" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.82333933246073299" green="0.29830932272597888" blue="0.26447025917479144" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8au-JK-pzu" firstAttribute="leading" secondItem="1Z6-dH-NRK" secondAttribute="leadingMargin" constant="31" id="ELE-cw-7tN"/>
+                            <constraint firstItem="84L-yH-1i9" firstAttribute="top" secondItem="bmV-Tx-VJC" secondAttribute="bottom" constant="45" id="FCK-tu-xT9"/>
+                            <constraint firstItem="bmV-Tx-VJC" firstAttribute="leading" secondItem="1Z6-dH-NRK" secondAttribute="leadingMargin" constant="95" id="G83-z9-GNA"/>
+                            <constraint firstItem="Ee1-3I-10E" firstAttribute="centerX" secondItem="rNF-tf-8k0" secondAttribute="centerX" id="UMx-Iy-FyB"/>
+                            <constraint firstItem="Ee1-3I-10E" firstAttribute="centerY" secondItem="1Z6-dH-NRK" secondAttribute="centerY" id="Vf5-uF-7jb"/>
+                            <constraint firstItem="8au-JK-pzu" firstAttribute="trailing" secondItem="1Z6-dH-NRK" secondAttribute="trailingMargin" id="ZSb-PN-EUq"/>
+                            <constraint firstItem="8au-JK-pzu" firstAttribute="firstBaseline" secondItem="rNF-tf-8k0" secondAttribute="baseline" id="ax9-0G-aHx"/>
+                            <constraint firstItem="rNF-tf-8k0" firstAttribute="leading" secondItem="1Z6-dH-NRK" secondAttribute="leadingMargin" constant="87" id="dyG-cM-1oJ"/>
+                            <constraint firstItem="bmV-Tx-VJC" firstAttribute="top" secondItem="8au-JK-pzu" secondAttribute="bottom" constant="8" symbolic="YES" id="fdy-K0-uBF"/>
+                            <constraint firstItem="Ee1-3I-10E" firstAttribute="leading" secondItem="1Z6-dH-NRK" secondAttribute="leading" id="g3A-hF-NB4"/>
+                            <constraint firstItem="rNF-tf-8k0" firstAttribute="centerX" secondItem="bmV-Tx-VJC" secondAttribute="centerX" id="gjE-Kw-e9e"/>
+                            <constraint firstItem="8au-JK-pzu" firstAttribute="top" secondItem="pkl-h2-YyS" secondAttribute="bottom" constant="423" id="gwH-1x-PP2"/>
+                            <constraint firstItem="Ee1-3I-10E" firstAttribute="bottom" secondItem="84L-yH-1i9" secondAttribute="top" id="kJh-zz-HkD"/>
+                            <constraint firstAttribute="trailing" secondItem="Ee1-3I-10E" secondAttribute="trailing" id="lj6-Zq-XBg"/>
+                            <constraint firstItem="rNF-tf-8k0" firstAttribute="top" secondItem="pkl-h2-YyS" secondAttribute="bottom" constant="391" id="zuj-1G-fop"/>
+                        </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ed0-cx-FE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2183.1999999999998" y="2.2488755622188905"/>
+            <point key="canvasLocation" x="-2184.057971014493" y="1.6304347826086958"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bGA-rt-Lzc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-Li-gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="KHp-hJ-bk7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hei-Hb-iSF">
@@ -299,7 +354,7 @@
                         <color key="tintColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.91060161590576172" green="0.4047553539276123" blue="0.36294370889663696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="28"/>
                             <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -308,6 +363,7 @@
                         <segue destination="2px-XW-T2W" kind="relationship" relationship="rootViewController" id="ifZ-ua-tRm"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-Li-gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="215.19999999999999" y="3.1484257871064472"/>
         </scene>
@@ -325,10 +381,11 @@
         <image name="HP_Main" width="115" height="690"/>
         <image name="HP_Secondary" width="115" height="690"/>
         <image name="PetPal_BG1" width="1080" height="1920"/>
-        <image name="cloud" width="296" height="174"/>
+        <image name="cloud_new" width="512" height="512"/>
         <image name="cog" width="2000" height="2000"/>
         <image name="dog_body" width="678" height="646"/>
         <image name="dog_head" width="265" height="155"/>
+        <image name="petPalFrontPage2" width="1080" height="1920"/>
         <image name="redx" width="600" height="592"/>
     </resources>
 </document>
