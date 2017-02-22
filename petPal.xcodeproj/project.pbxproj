@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9617515E1E5D778E00DC3EAB /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9617515D1E5D778E00DC3EAB /* introViewController.swift */; };
 		961751601E5DF28F00DC3EAB /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9617515F1E5DF28F00DC3EAB /* Settings.storyboard */; };
-		961751621E5E0AF700DC3EAB /* Wizard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961751611E5E0AF700DC3EAB /* Wizard.storyboard */; };
 		9619C4171E5D017000DD628F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9619C4161E5D017000DD628F /* AppDelegate.swift */; };
 		9619C4191E5D017100DD628F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9619C4181E5D017100DD628F /* ViewController.swift */; };
 		9619C41E1E5D017100DD628F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9619C41D1E5D017100DD628F /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		9617515D1E5D778E00DC3EAB /* introViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
 		9617515F1E5DF28F00DC3EAB /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		961751611E5E0AF700DC3EAB /* Wizard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wizard.storyboard; sourceTree = "<group>"; };
 		9619C4131E5D017000DD628F /* petPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9619C4161E5D017000DD628F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9619C4181E5D017100DD628F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				9619C41D1E5D017100DD628F /* Assets.xcassets */,
 				9619C41F1E5D017100DD628F /* LaunchScreen.storyboard */,
 				9619C42C1E5D361D00DD628F /* Main.storyboard */,
-				961751611E5E0AF700DC3EAB /* Wizard.storyboard */,
 				9617515F1E5DF28F00DC3EAB /* Settings.storyboard */,
 				9617515D1E5D778E00DC3EAB /* introViewController.swift */,
 				9619C4221E5D017100DD628F /* Info.plist */,
@@ -141,7 +138,6 @@
 			files = (
 				9619C4211E5D017100DD628F /* LaunchScreen.storyboard in Resources */,
 				9619C41E1E5D017100DD628F /* Assets.xcassets in Resources */,
-				961751621E5E0AF700DC3EAB /* Wizard.storyboard in Resources */,
 				9619C42D1E5D361D00DD628F /* Main.storyboard in Resources */,
 				961751601E5DF28F00DC3EAB /* Settings.storyboard in Resources */,
 			);

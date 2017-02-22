@@ -291,7 +291,7 @@
         <scene sceneID="bGA-rt-Lzc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-Li-gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" id="KHp-hJ-bk7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KHp-hJ-bk7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hei-Hb-iSF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
