@@ -37,7 +37,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let title = ("doggo ||" + String(dog.dogLevel))
         self.title = title
         let timer = Timer.scheduledTimer(
             timeInterval: 1.0, target: self, selector: #selector(setHealth),
@@ -55,7 +54,7 @@ class ViewController: UIViewController {
             didGetDelta = true
         }
         dog.checkStates()
-        let title = ("doggo || Level:" + String(dog.dogLevel))
+        let title = (Dog.name + " || Level:" + String(dog.dogLevel))
         self.title = title
         let d = CGFloat(round(dog.health))
         print(d)

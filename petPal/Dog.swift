@@ -16,6 +16,8 @@ var oftenToFeed = 1
     var played = 0
     var health = 0.0
     var dogLevel = 1
+    var didLevel = false
+    static var name = ""
     
     func getTimeDelta() -> Double{
         let currentDate = Date()
@@ -40,11 +42,12 @@ var oftenToFeed = 1
              self.health += 85.34
             }
         }
-        if self.fed == 1, self.walked == 1, self.played == 1{
+        if self.fed == 1, self.walked == 1, self.played == 1, self.didLevel == false{
         self.dogLevel += 1
         self.fed = 0
         self.played = 0
         self.walked = 0
+        self.didLevel = true
         }
         if self.health > 256 {
         self.health = 256
