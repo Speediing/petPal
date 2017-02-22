@@ -69,11 +69,23 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
             self.dogHead.frame.origin.y += 10
         }, completion: nil)
-        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseInOut, animations: {
             self.cloud1.frame.origin.x += 10
         }, completion: nil)
         UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
             self.cloud1.frame.origin.x -= 10
+        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseInOut, animations: {
+            self.cloud2.frame.origin.x -= 10
+        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
+            self.cloud2.frame.origin.x += 10
+        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 1, options: .curveEaseInOut, animations: {
+            self.cloud3.frame.origin.x += 12
+        }, completion: nil)
+        UIView.animate(withDuration: 1, delay: 2, options: .curveEaseInOut, animations: {
+            self.cloud3.frame.origin.x -= 12
         }, completion: nil)
         
     }
