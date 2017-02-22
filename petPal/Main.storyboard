@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kqx-YR-i3O">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kqx-YR-i3O">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         <!--View Controller-->
         <scene sceneID="dOp-wq-eee">
             <objects>
-                <viewController id="2px-XW-T2W" customClass="ViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2px-XW-T2W" customClass="ViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A19-Ln-OoQ"/>
                         <viewControllerLayoutGuide type="bottom" id="AoX-rv-6pa"/>
@@ -95,7 +95,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Played With:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-Ib-KhE">
-                                <rect key="frame" x="84" y="640" width="96" height="21"/>
+                                <rect key="frame" x="84" y="640" width="96" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -129,16 +129,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="4sc-TE-XvX">
-                                <rect key="frame" x="318" y="578" width="35" height="33"/>
+                                <rect key="frame" x="318" y="579.33333333333337" width="35" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="y7S-eY-1GE"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="xHe-N5-PBb">
-                                <rect key="frame" x="318" y="681" width="35" height="34"/>
+                                <rect key="frame" x="318" y="680.33333333333348" width="35" height="34.666666666666629"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redx" translatesAutoresizingMaskIntoConstraints="NO" id="Vkq-DR-M7D">
-                                <rect key="frame" x="318" y="627" width="35" height="34"/>
+                                <rect key="frame" x="318" y="626.33333333333337" width="35" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Pxz-kx-1cp"/>
                                 </constraints>
@@ -199,12 +199,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153.6231884057972" y="2.4456521739130435"/>
+            <point key="canvasLocation" x="1146" y="53"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="x9u-1c-xxI">
             <objects>
-                <viewController id="Jed-tA-x5w" customClass="SettingsViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jed-tA-x5w" customClass="SettingsViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1TW-tk-PiN"/>
                         <viewControllerLayoutGuide type="bottom" id="hw9-Al-6Ge"/>
@@ -222,7 +222,7 @@
         <!--Intro View Controller-->
         <scene sceneID="GrO-Ne-g3B">
             <objects>
-                <viewController storyboardIdentifier="NameDog" id="WoM-hr-jfZ" customClass="introViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameDog" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WoM-hr-jfZ" customClass="introViewController" customModule="petPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XJE-C9-q7E"/>
                         <viewControllerLayoutGuide type="bottom" id="2sU-IW-rta"/>
@@ -262,7 +262,7 @@
         <!--View Controller-->
         <scene sceneID="kUa-Eb-Ncf">
             <objects>
-                <viewController storyboardIdentifier="Intro" id="kqx-YR-i3O" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kqx-YR-i3O" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pkl-h2-YyS"/>
                         <viewControllerLayoutGuide type="bottom" id="84L-yH-1i9"/>
@@ -308,12 +308,17 @@
         <!--Navigation Controller-->
         <scene sceneID="bGA-rt-Lzc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KHp-hJ-bk7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KHp-hJ-bk7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hei-Hb-iSF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hei-Hb-iSF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.91060161590576172" green="0.4047553539276123" blue="0.36294370889663696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

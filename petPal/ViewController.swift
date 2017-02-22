@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         setHealth()
         fedImage.image = UIImage(named:"check")!
     }
-    
+    struct defaultsKeys {
+        static let keyOne = "firstStringKey"
+        static let keyTwo = "secondStringKey"
+    }
     @IBAction func Walk(_ sender: UIButton) {
         dog.walked = 1
         setHealth()
@@ -42,7 +45,10 @@ class ViewController: UIViewController {
             timeInterval: 1.0, target: self, selector: #selector(setHealth),
             userInfo: nil, repeats: true)
         setHealth()
-        
+        let defaults = UserDefaults.standard
+        //if let stringOne = defaults.string(forKey: defaultsKeys.keyOne) {
+          //  dog.dogLevel = Int(stringOne)!
+        //}
     }
     
     var didGetDelta = false
@@ -59,10 +65,18 @@ class ViewController: UIViewController {
         let d = CGFloat(round(dog.health))
         let x = secondaryBar.frame.origin
         self.healthBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
-        
+        let defaults = UserDefaults.standard
+        defaults.setValue((String(dog.dogLevel)), forKey: defaultsKeys.keyOne)
+        defaults.synchronize()
     }
     
-    
-    
-}
+    override func encodeRestorableState(with coder: NSCoder) {
+        coder.encode(dog.dogLevel, forKey: "doglevel")
+        super.encodeRestorableState(with: coder)
+    }
+    override func decodeRestorableState(with coder: NSCoder) {
+        dog.dogLevel = coder.decodeInteger(forKey: "doglevel")
+        super.decodeRestorableState(with: coder)
+    }
+    }
 
