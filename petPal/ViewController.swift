@@ -9,21 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let dog = Dog()
+    
+    @IBAction func Feed(_ sender: UIButton) {
+    }
+    
+    @IBAction func Walk(_ sender: UIButton) {
+    }
     
     
-    
+    @IBAction func Play(_ sender: UIButton) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let currentDate = Date()
-        let calendar = Calendar.current
-        let midnightTime = DateComponents(year: (calendar.component(.year, from: currentDate) ), month: (calendar.component(.month, from: currentDate)), day: (calendar.component(.day, from: currentDate)) , hour: 0, second: 0)
-        let midnightDate = calendar.date(from: midnightTime)!
-        var date = currentDate.timeIntervalSince(midnightDate)
-        date = 1 - (date / 86400)
-        print(date)
-        
-        
         
     }
 

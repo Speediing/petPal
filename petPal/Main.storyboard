@@ -26,13 +26,42 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_body" translatesAutoresizingMaskIntoConstraints="NO" id="zLq-D5-pri">
-                                <rect key="frame" x="38" y="294" width="299" height="174"/>
+                                <rect key="frame" x="16" y="294" width="299" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog_head" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-zW-8dP">
-                                <rect key="frame" x="38" y="263" width="122" height="76"/>
+                                <rect key="frame" x="16" y="261" width="122" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="ZBi-UN-AGZ">
+                                <rect key="frame" x="313" y="106" width="46" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HP_Main" translatesAutoresizingMaskIntoConstraints="NO" id="Ipm-jh-7gT">
+                                <rect key="frame" x="313" y="106" width="46" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKT-nE-c4u">
+                                <rect key="frame" x="47" y="132" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Feed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-gx-10b">
+                                <rect key="frame" x="209" y="202" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PLay"/>
+                                <connections>
+                                    <action selector="Play:" destination="2px-XW-T2W" eventType="touchUpInside" id="bDv-aH-90t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vj-fe-XHS">
+                                <rect key="frame" x="148" y="106" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Walk"/>
+                                <connections>
+                                    <action selector="Walk:" destination="2px-XW-T2W" eventType="touchUpInside" id="EZs-JM-JUI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -45,6 +74,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="Walk" destination="6Vj-fe-XHS" id="zBJ-dZ-9dK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnT-zV-Xyu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,9 +87,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HHq-e3-12q" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="czF-PG-Kn5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="czF-PG-Kn5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.91060161590576172" green="0.4047553539276123" blue="0.36294370889663696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -70,6 +103,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HP_Main" width="115" height="690"/>
+        <image name="HP_Secondary" width="115" height="690"/>
         <image name="PetPal_BG1" width="1080" height="1920"/>
         <image name="dog_body" width="678" height="646"/>
         <image name="dog_head" width="265" height="155"/>
