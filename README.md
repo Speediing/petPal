@@ -1,2 +1,2 @@
-# petPal
-CalgaryHacks 2017 project
+# Pet Pal - CalgaryHacks 2017 project
+
