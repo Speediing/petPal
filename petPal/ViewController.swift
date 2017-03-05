@@ -21,18 +21,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var walkedImage: UIImageView!
     @IBAction func Feed(_ sender: UIButton) {
         dog.fed = true
-        //setHealth()
+        setHealth()
         fedImage.image = UIImage(named:"check")!
         
-    }
-    struct defaultsKeys {
-        static let keyOne = "firstStringKey"
-        static let keyTwo = "secondStringKey"
     }
     @IBOutlet weak var dogHead: UIImageView!
     @IBAction func Walk(_ sender: UIButton) {
         dog.walked = true
-        //setHealth()
+        setHealth()
         walkedImage.image = UIImage(named:"check")!
         
     }
@@ -40,7 +36,7 @@ class ViewController: UIViewController {
     
     @IBAction func Play(_ sender: UIButton) {
         dog.played = true
-        //setHealth()
+        setHealth()
         playedImage.image = UIImage(named:"check")!
         
     }
@@ -60,10 +56,6 @@ class ViewController: UIViewController {
             userInfo: nil, repeats: true)
         
         
-        //let defaults = UserDefaults.standard
-        //if let stringOne = defaults.string(forKey: defaultsKeys.keyOne) {
-        //  dog.dogLevel = Int(stringOne)!
-        //}
     }
     func animatePlease(){
         UIView.animate(withDuration: 1, delay: 1, options: .curveEaseInOut, animations: {
@@ -96,43 +88,35 @@ class ViewController: UIViewController {
         playedImage.image = UIImage(named:"redx")!
         walkedImage.image = UIImage(named:"redx")!
         fedImage.image = UIImage(named:"redx")!
-
+        
     }
-    var didGetDelta = false
+    
     var count = 0
     func setHealth(){
         count += 1
-//        if count == Int(dog.frequency * 60) ,  dog.didLevel == false{
-//        dog.dogLevel = 1
-//        self.count = 0
-//        resetFlags()
-//        }
+        
         if count == Int(dog.frequency * 60){
-        count = 0
-        resetFlags()
+            count = 0
+            resetFlags()
         }
         if count > Int(dog.frequency * 60){
-        count = 0
+            count = 0
         }
-
-        if !didGetDelta{
-//            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency), currentTime: count) * 256
-            dog.health += ((1/(dog.frequency * (60.0))) * (256.0))
-        }
+        
+        dog.health += ((1/(dog.frequency * (60.0))) * (256.0))
         dog.checkStates()
         
-        let title = (Dog.name + " - Level:" + String(dog.dogLevel))
-        self.title = title
-        let d = CGFloat(round(dog.health))
-
-        let x = healthBar.frame.origin
-        self.secondaryBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
-        //let defaults = UserDefaults.standard
         
-        //defaults.setValue((String(dog.dogLevel)), forKey: defaultsKeys.keyOne)
-        //defaults.synchronize()
+        self.title = (Dog.name + " - Level:" + String(dog.dogLevel))
+        let d = CGFloat(round(dog.health))
+        
+        let x = healthBar.frame.origin
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+            self.secondaryBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
+        }, completion: nil)
+        
     }
     
     
-    }
+}
 
