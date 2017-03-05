@@ -12,8 +12,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var care: UISlider!
     @IBAction func careFrequency(_ sender: UISlider) {
-        dog.frequency = care.value
-        print(dog.frequency)
+        dog.frequency = Double(care.value)
     }
     
     @IBOutlet weak var dogField: UITextField!

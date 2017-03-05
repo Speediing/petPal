@@ -20,9 +20,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var playedImage: UIImageView!
     @IBOutlet weak var walkedImage: UIImageView!
     @IBAction func Feed(_ sender: UIButton) {
-        dog.fed = 1
-        setHealth()
+        dog.fed = true
+        //setHealth()
         fedImage.image = UIImage(named:"check")!
+        
     }
     struct defaultsKeys {
         static let keyOne = "firstStringKey"
@@ -30,19 +31,21 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var dogHead: UIImageView!
     @IBAction func Walk(_ sender: UIButton) {
-        dog.walked = 1
-        setHealth()
+        dog.walked = true
+        //setHealth()
         walkedImage.image = UIImage(named:"check")!
+        
     }
     
     
     @IBAction func Play(_ sender: UIButton) {
-        dog.played = 1
-        setHealth()
+        dog.played = true
+        //setHealth()
         playedImage.image = UIImage(named:"check")!
+        
     }
     @IBOutlet weak var healthBar: UIImageView!
-
+    
     
     
     override func viewDidLoad() {
@@ -99,36 +102,35 @@ class ViewController: UIViewController {
     var count = 0
     func setHealth(){
         count += 1
-        if count == Int(dog.frequency * 60) ,  dog.didLevel == false{
-        dog.dogLevel = 1
-        self.count = 0
-        resetFlags()
-        }
+//        if count == Int(dog.frequency * 60) ,  dog.didLevel == false{
+//        dog.dogLevel = 1
+//        self.count = 0
+//        resetFlags()
+//        }
         if count == Int(dog.frequency * 60){
         count = 0
-        dog.didLevel = false
         resetFlags()
         }
-        print("count", count)
-        print("set health")
-        print(dog.frequency * 60)
-        if !didGetDelta, dog.didLevel == false{
-            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency), currentTime: count) * 256
-            print(dog.health)
-            
+        if count > Int(dog.frequency * 60){
+        count = 0
+        }
+
+        if !didGetDelta{
+//            dog.health = dog.getTimeDelta(frequency: Double(dog.frequency), currentTime: count) * 256
+            dog.health += ((1/(dog.frequency * (60.0))) * (256.0))
         }
         dog.checkStates()
         
         let title = (Dog.name + " - Level:" + String(dog.dogLevel))
         self.title = title
         let d = CGFloat(round(dog.health))
-        print("d",d)
+
         let x = healthBar.frame.origin
         self.secondaryBar.frame = CGRect(x: x.x, y: x.y , width: CGFloat(46), height: d)
-        let defaults = UserDefaults.standard
+        //let defaults = UserDefaults.standard
         
-        defaults.setValue((String(dog.dogLevel)), forKey: defaultsKeys.keyOne)
-        defaults.synchronize()
+        //defaults.setValue((String(dog.dogLevel)), forKey: defaultsKeys.keyOne)
+        //defaults.synchronize()
     }
     
     

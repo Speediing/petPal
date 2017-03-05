@@ -9,52 +9,65 @@
 import Foundation
 
 class Dog{
-var oftenToFeed = 1
+    var oftenToFeed = 1
     
-    var frequency: Float = 1.0
-    var fed = 0
-    var walked = 0
-    var played = 0
+    var frequency: Double = 1.0
     var health = 0.0
     var dogLevel = 1
     var didLevel = false
     static var name = ""
+    var fed = false{
+        didSet{
+            print("k", self.health)
+            self.health -= 85.34
+            print("l", self.health)
+        }
+    }
+    var walked = false{
+            didSet{
+            self.health -= 85.34
+        }
+    }
+    
+    var played = false{
+        didSet{
+            self.health -= 85.34
+        }
+    }
+
     
     func getTimeDelta(frequency: Double, currentTime: Int) -> Double{
         let timeAllowed = frequency * 60
-        print("time allowed", timeAllowed)
         let delta = Double(currentTime)/timeAllowed
-        
-       
-        
-        
-        print("delta", delta)
         return delta
     }
     
     
     
     func checkStates() {
-       let statesList = [fed, walked, played]
-        var c = -1
-        for i in statesList{
-            c+=1
-            if i == 1{
-             self.health -= 85.34
-            }
+        print("current health", self.health)
+//        if dog.health == 256{
+//        self.dogLevel = 0
+        if self.health >= 256 {
+            self.health = 0
+            self.dogLevel = 1
+            self.didLevel = false
+            self.fed = false
+            self.walked = false
+            self.played = false
+            
         }
-        if self.fed == 1, self.walked == 1, self.played == 1, self.didLevel == false{
+        if self.fed == true, self.walked == true, self.played == true, self.didLevel == false{
         self.dogLevel += 1
-        self.fed = 0
-        self.played = 0
-        self.walked = 0
+        self.fed = false
+        self.played = false
+        self.walked = false
         self.didLevel = true
         }
-        if self.health > 256 {
-        self.health = 256
-        }
+
         if self.health < 0{
         self.health = 0
+            
         }
         
         
